@@ -1,7 +1,12 @@
 # URL shortener
-i
 
-To start server at 8080: `stack run`
+To start server at 8080: `stack run`.
+
+API endpoints:
+
+* `GET /` -- gives HTML form for testing /shorten endpoint using browser
+* `POST /shorten` -- shortens an url given as form field `url` **or** request body with `plain/text` content type with default encoding (ASCII) or `charset=utf-8`
+* `GET /...` -- shortened URLs redirection
 
 # Deployment
 
